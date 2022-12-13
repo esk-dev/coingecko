@@ -1,0 +1,7 @@
+<button
+  (click)="eventEmit(coin.id)"
+  class="w-full h-full p-2 items-center text-sm text-center font-bold rounded-md transition duration-150 ease-out hover:ease-in hover:scale-105 bg-white text-black focus:bg-gray-500 focus:text-white"
+>
+  <img class="w-6 inline-block mr-2" [src]="coin.image" alt="coin_icon" />
+  {{ coin.market_cap_rank }} {{ coin.name }}
+</button>
