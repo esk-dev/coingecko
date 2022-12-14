@@ -1,5 +1,5 @@
 export interface ChartData {
-  dates: Array<number>;
+  dates: Array<string>;
   prices: Array<number>;
   caps: Array<number>;
 }
