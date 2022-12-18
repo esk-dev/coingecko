@@ -1,0 +1,20 @@
+<h3 class="text-center my-2 font-bold text-xl text-black">Click on coin</h3>
+<section class="w-9/12 mx-auto p-5">
+  <div
+    class="bg-slate-400 flex text-base p-5 text-black font-semibold rounded-sm"
+  >
+    <span class="flex-1">Image</span>
+    <span class="flex-1">Name</span>
+    <span class="flex-1">Last Update</span>
+    <span class="flex-1">Current Price</span>
+  </div>
+  <div class="">
+    <ng-container *ngFor="let coinData of listCoinMarketData$ | async">
+      <app-row
+        class="cursor-pointer flex w-full p-5 odd:bg-white even:bg-slate-50 hover:bg-slate-300 hover:scale-105 rounded-sm"
+        (queryCoinDataById)="loadCoinDataById($event)"
+        [coin]="coinData"
+      ></app-row>
+    </ng-container>
+  </div>
+</section>

@@ -3,6 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/list',
+    pathMatch: 'full',
+  },
+  {
+    path: 'list',
+    title: 'Coingecko',
+    loadChildren: () =>
+      import('./coins-page/coins-page.module').then((m) => m.CoinsPageModule),
+  },
+  {
     path: ':id',
     title: '',
     loadChildren: () =>

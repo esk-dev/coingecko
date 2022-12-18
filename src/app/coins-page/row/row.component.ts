@@ -5,15 +5,15 @@ import {
   Input,
   Output,
 } from '@angular/core';
-import { CoinMarketData } from '../interfaces/coin-market-data';
+import { CoinMarketData } from 'src/app/interfaces/coin-market-data';
 
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
+  selector: 'app-row',
+  templateUrl: './row.component.html',
+  styleUrls: ['./row.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ButtonComponent {
+export class RowComponent {
   @Input()
   public coin!: CoinMarketData;
 

@@ -1,0 +1,18 @@
+<section class="w-full">
+  <div class="mx-auto w-full sm:w-6/12 flex-col flex gap-14">
+    <ng-container
+      *ngFor="
+        let chart of chartData$ | async;
+        let i = index;
+        trackBy: trackByIndex
+      "
+    >
+      <canvas
+        baseChart
+        class="chart"
+        [data]="chart"
+        [type]="chartType"
+      ></canvas>
+    </ng-container>
+  </div>
+</section>

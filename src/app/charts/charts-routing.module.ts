@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LineChartComponent } from './line-chart/line-chart.component';
+import { ChartDashboardComponent } from './chart-dashboard/chart-dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LineChartComponent,
+    component: ChartDashboardComponent,
   },
 ];
 

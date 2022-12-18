@@ -1,16 +1,4 @@
-<nav class="bg-black p-1 shadow-xl h-1/4 sm:h-60">
-  <h2 class="text-white font-bold text-xl p-1">CryptoGecko API</h2>
-  <div
-    class="gap-1 justify-center sm:justify-start p-1 flex flex-wrap sm:gap-5"
-  >
-    <ng-container *ngFor="let coinMarketData of listCoinMarketData$ | async">
-      <app-button
-        class="w-36 sm:w-40"
-        (queryCoinDataById)="loadCoinDataById($event)"
-        [coin]="coinMarketData"
-      ></app-button>
-    </ng-container>
-  </div>
+<nav class="bg-black p-1 shadow-xl">
+  <h2 class="text-white font-bold text-xl p-1">CoinGecko API</h2>
 </nav>
-
 <router-outlet></router-outlet>

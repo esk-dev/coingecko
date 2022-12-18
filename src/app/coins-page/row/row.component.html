@@ -1,0 +1,14 @@
+<div class="flex w-full" (click)="eventEmit(coin.id)">
+  <span class="row-props flex-1">
+    <img class="w-6 inline-block mr-2" [src]="coin.image" alt="coin_icon" />
+  </span>
+  <span class="row-props flex-1">
+    {{ coin.name }}
+  </span>
+  <span class="row-props flex-1">
+    {{ coin.last_updated }}
+  </span>
+  <span class="row-props flex-1">
+    {{ coin.current_price }}
+  </span>
+</div>
